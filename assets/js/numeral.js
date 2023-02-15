@@ -30,3 +30,6 @@ for (let i = 0; i < $('.harga').length; i++) {
 $(document).ready( function () {
     $('#table-pengguna').DataTable();
 } );
+$(document).ready( function () {
+    $('#table-petugas').DataTable();
+} );
