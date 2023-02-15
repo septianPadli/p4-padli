@@ -24,3 +24,9 @@ for (let i = 0; i < $('.harga').length; i++) {
     }
     $('.harga')[i].innerText = replaced
 }
+
+
+// Pengguna Table
+$(document).ready( function () {
+    $('#table-pengguna').DataTable();
+} );
