@@ -1,0 +1,11 @@
+body {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.ratio-4x1 {
+    aspect-ratio: 4/1;
+}
