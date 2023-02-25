@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang - LeBay</title>
+    <link rel="icon" href="/assets/img/logo.svg">
+
+    <!-- G Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/client.css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white border-bottom border-warning shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="#">
+                <img src="/assets/img/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                LeBay
+            </a>          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fw-semibold active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="#">Lelang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="#">Penawaran Saya</a>
+              </li>
+            </ul>
+
+            <!-- Has Login -->
+            <!-- <div class="btn-group">
+                <button type="button" class="btn btn-outline-warning text-black dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-circle"></i>
+                  Septian Padli
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button">Profile</button></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><button class="dropdown-item" type="button">Logout</button></li>
+                </ul>
+            </div> -->
+
+            <!-- Guest -->
+            <a href="" class="btn btn-warning text-white fw-semibold">
+                <i class="bi bi-box-arrow-in-right me-1"></i> Login
+            </a>
+          </div>
+        </div>
+      </nav>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <main class="py-5 mt-5">
+        <section>
+            <div class="container">
+                <div class="card">
+                    <div class="card-body d-flex flex-column gap-2">
+                        <!-- Looping -->
+                        <div class="card border-0 shadow-sm w-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <p class="mb-0 fw-semibold text-warning">inv-20230201/0002</p>
+                                    <span class="badge border border-warning text-warning d-flex align-items-center gap-1"><i class="bi bi-hourglass-split"></i> <span>3 Maret 2023</span></span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 col-sm-2 col-lg-1 order-first">
+                                        <div class="ratio ratio-1x1 w-100 overflow-hidden rounded-3">
+                                            <a href="" class="w-100 d-block">
+                                                <img src="/assets/img/gas-station.jpg" alt="" class="h-100">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-8 order-last order-sm-2 mt-2 mt-sm-0">
+                                        <a href="" class="fs-6 fs-lg-5 fw-bold text-decoration-none text-black">
+                                            SPBU Pertamina Lamaran
+                                        </a>
+                                        <div class="d-flex gap-2 mt-1">
+                                            <span class="badge border border-warning text-warning d-flex align-items-center gap-1">
+                                                <i class="bi bi-pin-map-fill"></i>   <span>Karawang</span>
+                                            </span>
+                                            <span class="badge border border-warning text-warning d-flex align-items-center gap-1">
+                                                <p class="mb-1"><i class="bi bi-map-fill"></i> 672 m<sup>2</sup></p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-sm-4 col-lg-3 border-start order-2 order-sm-last">
+                                        <p class="mb-0"><small>Harga Penawaran</small></p>
+                                        <p class="fw-bold fs-6 fs-lg-5">Rp. 20.000.000</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <form action="">
+                                        <button class="btn btn-danger btn-sm fw-semibold">Hapus</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <footer class="border-top border-warning py-4">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <div class="d-flex align-items-center gap-2 mb-4 justify-content-center justify-content-md-start">
+                        <img src="/assets/img/logo.svg" alt="" style="height: 4rem;">
+                        <h2 class="fw-semibold">LeBay</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque vitae inventore at sapiente maiores odio culpa fuga ad fugit!</p>
+                </div>
+                <div class="col-12 col-sm-9 col-md-5">
+                    <div class="w-fit mx-auto text-center">
+                        <h5 class="fw-semibold text-warning mb-0">Halaman</h5>
+                        <hr class="text-warning mt-1">
+                        <div class="d-flex flex-column gap-2 text-center">
+                            <a href="" class="text-decoration-none link-warning">
+                                Beranda
+                            </a>
+                            <a href="" class="text-decoration-none link-warning">
+                                Lelang
+                            </a>
+                            <a href="#cara-kerja" class="text-decoration-none link-warning">
+                                Cara Kerja
+                            </a>
+                            <a href="" class="text-decoration-none link-warning">
+                                Yang Sering Ditanyakan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 mt-4 mt-md-0">
+                    <div class="d-flex gap-4 gap-sm-2 gap-lg-4 h-100 align-items-center justify-content-center flex-row flex-sm-column flex-lg-row">
+                        <a href="" class="btn btn-warning text-white fs-6 fs-lg-4 rounded-pill">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="" class="btn btn-warning text-white fs-6 fs-lg-4 rounded-pill">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="" class="btn btn-warning text-white fs-6 fs-lg-4 rounded-pill">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang - LeBay</title>
+    <link rel="icon" href="/assets/img/logo.svg">
+
+    <!-- G Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/client.css">
+
+    <!-- Add Ons -->
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/DataTables/datatables.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-white border-bottom border-warning shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="#">
+                <img src="/assets/img/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                LeBay
+            </a>          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fw-semibold active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="#">Lelang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold" href="#">Penawaran Saya</a>
+              </li>
+            </ul>
+
+            <!-- Has Login -->
+            <!-- <div class="btn-group">
+                <button type="button" class="btn btn-outline-warning text-black dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-circle"></i>
+                  Septian Padli
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button">Profile</button></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><button class="dropdown-item" type="button">Logout</button></li>
+                </ul>
+            </div> -->
+
+            <!-- Guest -->
+            <a href="" class="btn btn-warning text-white fw-semibold">
+                <i class="bi bi-box-arrow-in-right me-1"></i> Login
+            </a>
+          </div>
+        </div>
+      </nav>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <main class="py-5 mt-5">
+        <section>
+            <div class="container">
+                <div class="card">
+                    <div class="card-body row g-4">
+                        <div class="col-10 col-md-4 mx-auto">
+                            <div class="w-100 ratio ratio-1x1 overflow-hidden rounded-3">
+                                <div class="w-100">
+                                    <img src="/assets/img/gas-station.jpg" alt="" class="h-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <h3 class="fw-bold">SPBU Pertamina Lamaran</h3>
+                            <h4 class="fw-bold text-warning">Rp. 20.000.000</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Lokasi: Karawang</li>
+                                <li class="list-group-item">Luas: 672 m<sup>2</sup></li>
+                                <li class="list-group-item">Jenis: SHM</li>
+                                <li class="list-group-item">Ditutup: 3 maret 2022</li>
+                                <li class="list-group-item">Alamat: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, officia quibusdam nemo illo architecto corrupti? Rerum dicta voluptatem doloribus itaque.</li>
+                            </ul>
+                            <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ipsa repudiandae sunt ad laborum quasi eum maxime in enim id.</p>
+                            <form action="" method="" class="row w-100 align-items-center">
+                                <div class="col-12 mb-2 mb-lg-0 col-lg-4">
+                                    <label for="penawaran" class="form-label mb-0 fw-semibold">Masukkan Penawaran :</label>
+                                </div>
+                                <div class="col-9 col-lg-6 d-flex align-items-center gap-2">
+                                    <label for="penawaran" class="form-label mb-0">Rp. </label>
+                                    <input type="number" class="form-control" id="penawaran" aria-describedby="emailHelp">
+                                </div>
+                                <div class="col-3 col-lg-2">
+                                    <button type="submit" class="btn btn-warning text-white">Tawarkan</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="fw-semibold mb-4">Penawaran Tertinggi</h3>
+                        <table id="penawaran_table" class="display">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama</th>
+                                    <th>Tanggal</th>
+                                    <th>Penawaran</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Padli</td>
+                                    <td>23 Februari 2023</td>
+                                    <td class="fw-semibold text-warning">Rp. <span class="harga">20.000.000</span></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Padli</td>
+                                    <td>23 Februari 2023</td>
+                                    <td class="fw-semibold text-warning">Rp. <span class="harga">19.000.000</span></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Padli</td>
+                                    <td>23 Februari 2023</td>
+                                    <td class="fw-semibold text-warning">Rp. <span class="harga">18.000.000</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <footer class="border-top border-warning py-4">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <div class="d-flex align-items-center gap-2 mb-4 justify-content-center justify-content-md-start">
+                        <img src="/assets/img/logo.svg" alt="" style="height: 4rem;">
+                        <h2 class="fw-semibold">LeBay</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque vitae inventore at sapiente maiores odio culpa fuga ad fugit!</p>
+                </div>
+                <div class="col-12 col-sm-9 col-md-5">
+                    <div class="w-fit mx-auto text-center">
+                        <h5 class="fw-semibold text-warning mb-0">Halaman</h5>
+                        <hr class="text-warning mt-1">
+                        <div class="d-flex flex-column gap-2 text-center">
+                            <a href="" class="text-decoration-none link-warning">
+                                Beranda
+                            </a>
+                            <a href="" class="text-decoration-none link-warning">
+                                Lelang
+                            </a>
+                            <a href="#cara-kerja" class="text-decoration-none link-warning">
+                                Cara Kerja
+                            </a>
+                            <a href="" class="text-decoration-none link-warning">
+                                Yang Sering Ditanyakan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 mt-4 mt-md-0">
+                    <div class="d-flex gap-4 gap-sm-2 gap-lg-4 h-100 align-items-center justify-content-center flex-row flex-sm-column flex-lg-row">
+                        <a href="" class="btn btn-warning text-white fs-6 fs-lg-4 rounded-pill">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="" class="btn btn-warning text-white fs-6 fs-lg-4 rounded-pill">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="" class="btn btn-warning text-white fs-6 fs-lg-4 rounded-pill">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/assets/vendor/jquery-3.6.3.js"></script>
+    <script src="/assets/vendor/DataTables/datatables.min.js"></script>
+    <script src="/assets/js/tables.js"></script>
+</body>
+</html>

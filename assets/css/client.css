@@ -9,3 +9,31 @@ body {
 .ratio-4x1 {
     aspect-ratio: 4/1;
 }
+
+@media (min-width: 768px) {
+
+    .fs-lg-1 {
+        font-size: calc(1.375rem + 1.5vw) !important;
+    }
+    
+    .fs-lg-2 {
+        font-size: calc(1.325rem + 0.9vw) !important;
+    }
+    
+    .fs-lg-3 {
+        font-size: calc(1.3rem + 0.6vw) !important;
+    }
+    
+    .fs-lg-4 {
+        font-size: calc(1.275rem + 0.3vw) !important;
+    }
+    
+    .fs-lg-5 {
+        font-size: 1.25rem !important;
+    }
+    
+    .fs-lg-6 {
+        font-size: 1rem !important;
+    }
+
+}
